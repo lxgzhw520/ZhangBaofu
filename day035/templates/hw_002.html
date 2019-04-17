@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>块元素和内联元素</title>
+</head>
+<body>
+<pre>
+		块元素和内联元素
+		
+		div就是一个块元素，
+			所谓的块元素就是会独占一行的的元素,无论他的内容有多少
+				他都会独占一整行。
+			p h1 h2 h3 ... 
+			div这个标签没有任何语义，就是一个纯粹的块元素，
+				并且不会为它里边的元素设置任何的默认样式，
+			div元素主要用来对页面进行布局的	
+			
+		span是一个内联元素（行内元素）	
+			所谓的行内元素，指的是只占自身大小的元素，不会占用一行
+			常见的内联元素：
+				a img iframe span
+			span没有任何的语义，span标签专门用来选中文字，
+			然后为文字来设置样式	
+			
+		块元素主要用来做页面中的布局，内联元素主要用来选中文本设置样式，
+			一般情况下只使用块元素去包含内联元素，而不会使用内联元素去包含一个块元素
+			a元素可以包含任意元素，除了他本身
+			p元素不可以包含任何块元素
+			
+</pre>
+<ul>
+    <li><a href="/hw_001.html">hw_001</a></li>
+    <li><a href="/hw_002.html">hw_002</a></li>
+    <li><a href="/hw_003.html">hw_003</a></li>
+    <li><a href="/hw_004.html">hw_004</a></li>
+    <li><a href="/hw_005.html">hw_005</a></li>
+    <li><a href="/hw_006.html">hw_006</a></li>
+    <li><a href="/hw_007.html">hw_007</a></li>
+    <li><a href="/hw_008.html">hw_008</a></li>
+    <li><a href="/hw_009.html">hw_009</a></li>
+    <li><a href="/hw_010.html">hw_010</a></li>
+</ul>
+<div style="background-color: gold;">
+	块元素的特点是独占一行
+</div>
+<div style="background-color: gold;">
+	块元素的特点是独占一行
+</div>
+<div style="background-color: gold;">
+	块元素的特点是独占一行
+</div>
+<span style="background-color: aqua;">span元素的特点是水平平铺,直到空间满了才换行</span>
+<span style="background-color: aqua;">span元素的特点是水平平铺,直到空间满了才换行</span>
+<span style="background-color: aqua;">span元素的特点是水平平铺,直到空间满了才换行</span>
+</body>
+</html>
