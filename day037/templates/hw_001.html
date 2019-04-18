@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见的伪类选择器</title>
+    <style>
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            background: gold;
+        }
+
+        a:active {
+            background: green;
+        }
+
+        a::selection {
+            background: aqua;
+        }
+
+        input:focus {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+1111
+<ul>
+    <li><a href="/hw_001.html">hw_001_常见的伪类选择器</a></li>
+    <li><a href="/hw_002.html">hw_002_伪元素</a></li>
+    <li><a href="/hw_003.html">hw_003_属性选择器</a></li>
+    <li><a href="/hw_004.html">hw_004_选择器复习</a></li>
+    <li><a href="/hw_005.html">hw_005</a></li>
+    <li><a href="/hw_006.html">hw_006</a></li>
+    <li><a href="/hw_007.html">hw_007</a></li>
+    <li><a href="/hw_008.html">hw_008</a></li>
+    <li><a href="/hw_009.html">hw_009</a></li>
+    <li><a href="/hw_010.html">hw_010</a></li>
+</ul>
+<pre>
+    常见的伪类选择器有:
+        1 :link 一个普通的链接状态
+        2 :visited 访问后的链接状态
+        3 :hover 鼠标悬停时的状态
+        4 :active 激活时的状态
+        5 :focus 获取焦点时的状态 一般用于input
+        6 ::selection 选中时的状态
+</pre>
+<h1>伪类选择器练习</h1>
+<a href="">普通的链接</a>
+<a href="">访问后的链接</a>
+<a href="">激活时(被点击)的链接</a>
+<a href="">鼠标悬停时的链接</a>
+<a href="">选中时的链接</a>
+<br>
+<input type="text" value="获取焦点的输入框">
+<br>
+</body>
+</html>

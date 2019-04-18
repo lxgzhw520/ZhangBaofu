@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div > p {
+            color: red;
+        }
+
+        div p {
+            background: black;
+        }
+
+        #box {
+            width: 999px;
+        }
+
+        #box p:first-letter {
+            font-size: 33px;
+        }
+
+        #box p:first-line {
+            background: green;
+        }
+
+        #box P::selection {
+            background: blue;
+        }
+
+        #box p:before {
+            content: '最前面';
+            color: red;
+        }
+
+        #box p:after {
+            content: '最后面';
+            color: red;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:active {
+            background: green;
+        }
+
+        a:hover {
+            background: indigo;
+        }
+    </style>
+</head>
+<body>
+444444
+<ul>
+    <li><a href="/hw_001.html">hw_001_常见的伪类选择器</a></li>
+    <li><a href="/hw_002.html">hw_002_伪元素</a></li>
+    <li><a href="/hw_003.html">hw_003_属性选择器</a></li>
+    <li><a href="/hw_004.html">hw_004_选择器复习</a></li>
+    <li><a href="/hw_005.html">hw_005</a></li>
+    <li><a href="/hw_006.html">hw_006</a></li>
+    <li><a href="/hw_007.html">hw_007</a></li>
+    <li><a href="/hw_008.html">hw_008</a></li>
+    <li><a href="/hw_009.html">hw_009</a></li>
+    <li><a href="/hw_010.html">hw_010</a></li>
+</ul>
+<pre>
+    已经学过的选择器:
+        1 ID选择器 #
+        2 通配符选择器 *
+        3 标签选择器  div
+        4 类选择器 .class_name
+        5 交集选择器  p.class_name
+        6 并集选择器  h1,p,div
+        7 后代选择器  div p
+        8 子代选择器  div>p
+        9 伪类选择器
+            :link  :visited :active :first-letter :first-line :focus
+        10 伪类选择器
+            ::selection :before  :after
+</pre>
+
+<div>
+    <p>子类选择器</p>
+    <p>子类选择器</p>
+    <p>子类选择器</p>
+    <a href="">
+        <p>后代选择器</p>
+        <p>后代选择器</p>
+        <p>后代选择器</p>
+        <p>后代选择器</p>
+    </a>
+</div>
+
+<div id="box">
+    <p>
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+        非常长的段落
+    </p>
+</div>
+<div>
+    <a href="">超链接的伪类</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p[title] {
+            color: red;
+        }
+
+        p[title='lxgzhw'] {
+            font-size: 33px;
+        }
+
+        p[title^='lxgzhw'] {
+            background: gold;
+        }
+
+        p[title$='lxgzhw'] {
+            background: green;
+        }
+
+        p[title*='lxgzhwww'] {
+            background: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+33333
+<ul>
+    <li><a href="/hw_001.html">hw_001_常见的伪类选择器</a></li>
+    <li><a href="/hw_002.html">hw_002_伪元素</a></li>
+    <li><a href="/hw_003.html">hw_003_属性选择器</a></li>
+    <li><a href="/hw_004.html">hw_004_选择器复习</a></li>
+    <li><a href="/hw_005.html">hw_005</a></li>
+    <li><a href="/hw_006.html">hw_006</a></li>
+    <li><a href="/hw_007.html">hw_007</a></li>
+    <li><a href="/hw_008.html">hw_008</a></li>
+    <li><a href="/hw_009.html">hw_009</a></li>
+    <li><a href="/hw_010.html">hw_010</a></li>
+</ul>
+<pre>
+            /*
+			 * 为所有具有title属性的p元素，设置一个背景颜色为黄色
+			 * 属性选择器
+			 * 	- 作用：可以根据元素中的属性或属性值来选取指定元素
+			 * 	- 语法：
+			 * 		[属性名] 选取含有指定属性的元素
+			 * 		[属性名="属性值"] 选取含有指定属性值的元素
+			 * 		[属性名^="属性值"] 选取属性值以指定内容开头的元素
+			 * 		[属性名$="属性值"] 选取属性值以指定内容结尾的元素
+			 * 		[属性名*="属性值"] 选取属性值以包含指定内容的元素
+			 */
+</pre>
+<p title="">包含</p>
+<p title="lxgzhw">等于</p>
+<p title="lxgzhwlxgzhw111">以开头</p>
+<p title="111lxgzhwlxgzhwlxgzhw">以结尾</p>
+<p title="111lxgzhwlxgzhwwwlxgzhw111">包含指定内容</p>
+</body>
+</html>
