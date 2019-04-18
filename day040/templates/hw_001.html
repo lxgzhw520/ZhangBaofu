@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            height: 0;
+        }
+
+        .header {
+            position: relative;
+            width: 1000px;
+            height: 120px;
+            background: yellow;
+            margin: 0 auto;
+        }
+
+        .content {
+            width: 1000px;
+            height: 400px;
+            background: #bbffaa;
+            margin: 10px auto;
+        }
+
+        .left {
+            width: 210px;
+            height: 100%;
+            background: black;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .center {
+            width: 560px;
+            height: 100%;
+            background: aqua;
+            float: left;
+            margin: 0 10px;
+        }
+
+        .right {
+            width: 200px;
+            height: 100%;
+            background: blueviolet;
+            float: left;
+        }
+
+        .footer {
+            width: 1000px;
+            height: 120px;
+            background: brown;
+            margin: 0 auto;
+        }
+
+        /* 头部导航栏*/
+        ul {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 40px auto;
+            /*margin-top: 50px;*/
+            list-style: none;
+        }
+
+        ul li {
+            float: left;
+            display: block;
+            /*margin: 10px;*/
+            height: 20px;
+            /*height: 100%;*/
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            display: block;
+            float: left;
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: cornflowerblue;
+            text-align: center;
+            padding: 4px;
+        }
+        ul li a:hover{
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--导航栏-->
+    <ul>
+        <li><a href="/">首页</a></li>
+        <li><a href="/hw_001.html">hw_001</a></li>
+        <li><a href="/hw_002.html">hw_002</a></li>
+        <li><a href="/hw_003.html">hw_003</a></li>
+        <li><a href="/hw_004.html">hw_004</a></li>
+        <li><a href="/hw_005.html">hw_005</a></li>
+        <li><a href="/hw_006.html">hw_006</a></li>
+        <li><a href="/hw_007.html">hw_007</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div class="left"></div>
+    <div class="center">
+        <h1>第一页</h1>
+    </div>
+    <div class="right"></div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
