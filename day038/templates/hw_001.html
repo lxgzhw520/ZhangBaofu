@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr:nth-child(even) {
+            background: red;
+        }
+
+        tr:nth-child(odd) {
+            background: blue;
+        }
+        th:first-child{
+            font-size: 33px;
+        }
+        th:last-child{
+            font-size: 44px;
+        }
+
+    </style>
+</head>
+<body>
+1111
+<ul>
+    <li><a href="/hw_001.html">hw_001_子元素选择器</a></li>
+    <li><a href="/hw_002.html">hw_002_兄弟元素选择器</a></li>
+    <li><a href="/hw_003.html">hw_003_否定选择器</a></li>
+    <li><a href="/hw_004.html">hw_004_选择器的优先级</a></li>
+    <li><a href="/hw_005.html">hw_005_选择器总结复习</a></li>
+    <li><a href="/hw_006.html">hw_006</a></li>
+    <li><a href="/hw_007.html">hw_007</a></li>
+    <li><a href="/hw_008.html">hw_008</a></li>
+    <li><a href="/hw_009.html">hw_009</a></li>
+    <li><a href="/hw_010.html">hw_010</a></li>
+</ul>
+<pre>
+    /*
+     * 	:first-child 可以选中第一个子元素
+     *  :last-child 可以选中最后一个子元素
+     */
+    /*
+     * :nth-child 可以选中任意位置的子元素
+     * 		该选择器后边可以指定一个参数，指定要选中第几个子元素
+     * 		even 表示偶数位置的子元素
+     * 		odd 表示奇数位置的子元素
+     *
+     */
+</pre>
+<table>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+    </tr>
+    <tr>
+        <td>aaa</td>
+        <td>bbb</td>
+        <td>ccc</td>
+    </tr>
+    <tr>
+        <td>aaa</td>
+        <td>bbb</td>
+        <td>ccc</td>
+    </tr>
+    <tr>
+        <td>aaa</td>
+        <td>bbb</td>
+        <td>ccc</td>
+    </tr>
+    <tr>
+        <td>aaa</td>
+        <td>bbb</td>
+        <td>ccc</td>
+    </tr>
+
+</table>
+</body>
+</html>

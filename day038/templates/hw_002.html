@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p:first-child + p {
+            /*第一个p标签的兄弟元素*/
+            font-size: 33px;
+            background: green;
+        }
+
+        p:nth-child(4) ~ p {
+            /*第四个p标签后面所有的兄弟p标签元素
+            注意:索引是从1开始的
+            */
+            font-size: 22px;
+            background: indigo;
+        }
+    </style>
+</head>
+<body>
+2222
+<ul>
+    <li><a href="/hw_001.html">hw_001</a></li>
+    <li><a href="/hw_002.html">hw_002</a></li>
+    <li><a href="/hw_003.html">hw_003</a></li>
+    <li><a href="/hw_004.html">hw_004</a></li>
+    <li><a href="/hw_005.html">hw_005</a></li>
+    <li><a href="/hw_006.html">hw_006</a></li>
+    <li><a href="/hw_007.html">hw_007</a></li>
+    <li><a href="/hw_008.html">hw_008</a></li>
+    <li><a href="/hw_009.html">hw_009</a></li>
+    <li><a href="/hw_010.html">hw_010</a></li>
+</ul>
+
+<div>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+    <p>兄弟元素选择器</p>
+</div>
+</body>
+</html>

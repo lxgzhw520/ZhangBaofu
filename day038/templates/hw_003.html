@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p:not(.p1) {
+            /*除了class为p1的标签,字体设置为22px*/
+            font-size: 22px;
+        }
+
+        p:not(#p2) {
+            /*除了id为p2的标签,颜色设为红色*/
+            color: red;
+        }
+
+        p:not([title]) {
+            /*除了包含title属性的p标签,背景设为金色*/
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+33333
+<ul>
+    <li><a href="/hw_001.html">hw_001</a></li>
+    <li><a href="/hw_002.html">hw_002</a></li>
+    <li><a href="/hw_003.html">hw_003</a></li>
+    <li><a href="/hw_004.html">hw_004</a></li>
+    <li><a href="/hw_005.html">hw_005</a></li>
+    <li><a href="/hw_006.html">hw_006</a></li>
+    <li><a href="/hw_007.html">hw_007</a></li>
+    <li><a href="/hw_008.html">hw_008</a></li>
+    <li><a href="/hw_009.html">hw_009</a></li>
+    <li><a href="/hw_010.html">hw_010</a></li>
+</ul>
+
+<pre>
+    /*
+     * 为所有的p元素设置一个背景颜色为黄色，除了class值为hello的
+     *
+     * 否定伪类：
+     * 	作用：可以从已选中的元素中剔除出某些元素
+     * 	语法：
+     * 		:not(选择器)
+     */
+</pre>
+<div>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p class="p1">否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p id="p2">否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p title="p3">否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+    <p>否定伪类选择器</p>
+</div>
+</body>
+</html>
