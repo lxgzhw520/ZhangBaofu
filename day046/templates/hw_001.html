@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 14px;
+            margin: 0;
+            line-height: 150%;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 900px;
+        }
+
+        #header {
+            height: 100px;
+            background: #6cf;
+            margin-bottom: 5px;
+        }
+
+        #menu {
+            height: 30px;
+            background: #09c;
+            margin-bottom: 5px;
+        }
+
+        #mainContent {
+            background: #ccccff;
+            overflow: auto;
+            zoom: 1;
+            margin-bottom: 5px;
+        }
+
+        #sidebar {
+            float: right;
+            width: 200px;
+            background: #9ff;
+        }
+
+        #content {
+            float: left;
+            width: 675px;
+            padding: 10px;
+            background: #cff;
+        }
+
+        #footer {
+            height: 60px;
+            background: #6cf;
+        }
+
+        .clearfloat {
+            clear: both;
+            height: 0;
+            font-size: 1px;
+            line-height: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header"></div>
+    <br class="clearfloat">
+    <div id="menu"></div>
+    <br class="clearfloat">
+    <div id="mainContent">
+        <div id="sidebar">
+            <ul>
+                <li>内容1</li>
+                <li>内容2</li>
+                <li>内容3</li>
+                <li>内容4</li>
+                <li>内容5</li>
+                <li>内容6</li>
+                <li>内容7</li>
+                <li>内容8</li>
+                <li>内容9</li>
+                <li>内容10</li>
+            </ul>
+        </div>
+        <div id="content">>2列右窄左宽、高度自适应且未知高度底部平齐+头部+导航+尾部</div>
+    </div>
+    <br class="clearfloat">
+    <div id="footer"></div>
+</div>
+</body>
+</html>
