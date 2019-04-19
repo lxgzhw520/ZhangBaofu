@@ -1,0 +1,46 @@
+/*��ģ�����ɱ�׼֮·(www.aa25.cn)�ġ������������*/
+/*����ˮƽ���ޣ�ʹ����Ը��������ʹ�ô�ģ����ɵ��κκ�����κ�����*/
+/*�������ת�ش���Դ���뱣����<a href="http://www.aa25.cn">��׼֮·www.aa25.cn</a>�������Ӽ���Ȩ��ʶ*/
+/*���и��õĽ����������뵽www.aa25.cn���ԣ����˾������*/
+/*2008-8-28*/
+body {
+    font-family: Verdana;
+    font-size: 14px;
+    margin: 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#header {
+    height: 100px;
+    background: #6cf;
+    margin-bottom: 5px;
+}
+
+#mainContent {
+    height: 500px;
+    margin-bottom: 5px;
+}
+
+#sidebar {
+    float: left;
+    width: 200px;
+    height: 500px;
+    background: #9ff;
+}
+
+#content {
+    float: right;
+    width: 695px;
+    height: 500px;
+    background: #cff;
+}
+
+/*��Ϊ�ǹ̶���ȣ��������Ҹ�����������Ч����ie 3����bug*/
+#footer {
+    height: 60px;
+    background: #6cf;
+}
