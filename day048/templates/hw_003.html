@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #header {
+            height: 100px;
+            background: #9c6;
+            margin-bottom: 5px;
+        }
+
+        #menu {
+            height: 30px;
+            background: #693;
+            margin-bottom: 5px;
+        }
+
+        #mainContent {
+            background: url(bg.gif) right 0 repeat-y;
+            overflow: auto;
+            zoom: 1;
+            margin-bottom: 5px;
+        }
+
+        #sidebar {
+            float: right;
+            width: 200px;
+            background: #cf9;
+        }
+
+        #content {
+            margin-right: 205px !important;
+            margin-right: 202px;
+            height: auto !important;
+            height: 100px;
+            background: #ffa;
+        }
+
+        #footer {
+            height: 60px;
+            background: #9c6;
+        }
+
+        .clearfloat {
+            clear: both;
+            height: 0;
+            font-size: 1px;
+            line-height: 0px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">This is the Header</div>
+    <br class="clearfloat"/>
+    <div id="menu">This is the Menu</div>
+    <br class="clearfloat"/>
+    <div id="mainContent">
+        <div id="sidebar">This is the sidebar<br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        <div id="content">2列右侧固定左侧自适应宽度，未知高度且底部平齐+头部+导航+尾部――
+        </div>
+    </div>
+    <br class="clearfloat"/>
+    <div id="footer">This is the footer</div>
+</div>
+
+</body>
+</html>
