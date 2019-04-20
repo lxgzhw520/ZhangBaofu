@@ -1,0 +1,225 @@
+/*
+ * 在这里编辑主页的样式表
+ */
+
+/*
+ * 设置body
+ */
+body{
+	/*设置body的背景图片，水平方向重复*/
+	background: url(../img/bd-bg.png) repeat-x;
+	
+	height: 3000px;
+}
+
+/*
+ * 解决高度塌陷问题clearfix
+ */
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clearfix{
+	zoom:1;
+}
+
+/*
+ * 固定元素的宽度和居中
+ */
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*设置header*/
+.header{
+	/*background-color: #bfa;*/
+	/*设置一个上内边距*/
+	padding-top: 37px;
+	/*设置一个下内边距*/
+	padding-bottom: 46px;
+}
+
+/*设置logo的位置*/
+.logo{
+	margin-left: 15px;
+}
+
+/*
+ * 设置导航条
+ */
+.nav{
+	/*设置向右浮动*/
+	float: right;
+	/*设置一个上外边距*/
+	margin-top: 22px;
+}
+
+.nav li{
+	/*设置向左浮动*/
+	float: left;
+	/*设置左右内边距*/
+	padding: 0 10px 8px;
+	/*设置左边框*/
+	border-left: 1px #d6d6d6 dotted;
+}
+
+/*设置导航条中的超链接*/
+.nav a{
+	/*设置字体颜色*/
+	color: #666;
+	/*设置字体*/
+	font: bold 14px Georgia;
+	/*去除下划线*/
+	text-decoration: none;
+	
+}
+
+/*设置超链接的移入效果*/
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+
+/*
+ * 设置导航中的小标题
+ * 在chrome浏览器中字体最小支持到12px
+ * 	1-11都显示为12px
+ */
+.nav p{
+	/*字体颜色*/
+	color: #b7b7b7;
+	/*字体大小*/
+	font: 11px tahoma;
+}
+
+/*
+ * 设置banner
+ */
+.banner{
+	/*设置高度*/
+	height: 356px;
+	/*设置背景*/
+	background: url(../img/banner-bg.png) no-repeat bottom center;
+	/*开启一个相对定位*/
+	position: relative;
+}
+
+/*设置导航按钮*/
+.pointerDiv{
+	/*开启绝对定位*/
+	position: absolute;
+	/*为导航点进行定位*/
+	top: 314px;
+	left: 15px;
+}
+
+.pointerDiv a{
+	/*设置a浮动*/
+	float: left;
+	
+	/*设置宽度和高度*/
+	width: 17px;
+	height: 17px;
+	
+	/*设置一个左外边距*/
+	margin-left: 4px;
+	
+	background:url(../img/pointer.png) no-repeat;
+}
+
+/*设置超链接的hover*/
+.pointerDiv .active,
+.pointerDiv a:hover{
+	background:url(../img/pointer-active.png) no-repeat;
+}
+
+/*设置content部分*/
+
+.content h1{
+	/*设置文本居中*/
+	text-align: center;
+	/*设置字体*/
+	font: bold 24px Georgia;
+	/*设置上内边距*/
+	padding: 6px 0 20px 0;
+	/*设置一个下外边距*/
+	margin-bottom: 38px;
+	/*设置背景*/
+	background: url(../img/line.png) no-repeat bottom center;
+}
+
+
+/*
+ * 中间的三个div
+ */
+.content .pl , .content .cs , .content .uc{
+	/*向左浮动*/
+	float: left;
+	width: 300px;
+}
+
+/*
+ * 给div添加左右边距
+ */
+.content .cs{
+	margin: 0 20px;
+}
+
+/*设置div中的标题*/
+.content h2{
+	color: #11719e;
+	font: 21px Georgia;
+}
+
+.content .p1{
+	color: #8c8c8c;
+	font: 12px Helvetica;
+}
+
+/*设置图片div*/
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat;
+	/*设置上下外边距*/
+	margin: 16px 0px 10px 0px;
+	/*设置水平居中*/
+	text-align: center;
+	/*设置上内边距*/
+	padding-top: 12px;
+}
+
+/*设置第二个段落*/
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font: 13px Helvetica;
+	word-spacing: 2px;
+}
+
+/**
+ * 设置按钮的样式
+ */
+.content .lm{
+	/*设置块元素*/
+	display: block;
+	/*设置宽和高*/
+	width: 163px;
+	height: 40px;
+	/*设置背景*/
+	background: url(../img/btn1.png) no-repeat;
+	/*设置下划线*/
+	text-decoration: none;
+	/*设置文字*/
+	color: #016999;
+	font: 12px/40px Helvetica ;
+	/*设置文字的缩进*/
+	text-indent: 1em;
+	/*设置下外边距*/
+	margin-bottom: 35px;
+}
+
