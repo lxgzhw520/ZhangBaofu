@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /**
+        1.3个div和span宽高一样
+        2.背景分别是 red yellow yellowgreen
+        3.box2设置相对定位 relative 然后右移200px
+        4.s1设置相对定位 背景为yellow
+
+        学习点:
+        1.相对定位不改变元素属性,行内元素还是行内元素span
+        2.相对定位相对于自身原本的位置进行定位
+        3.定位方式有四种,static relative absolute fixed
+        4.位置偏移有四种 left right top bottom
+         */
+        div, span {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2, .s1 {
+            background-color: yellow;
+            position: relative;
+            left: 200px;
+        }
+
+        .box3 {
+            background-color: yellowgreen;
+        }
+
+        .s1 {
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<span class="s1">span标签</span>
+</body>
+</html>

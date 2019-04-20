@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+
+        /**
+        box1 box2 box3 宽高都是200
+        颜色不同
+        box2 设置固定定位fixed 右0 上0
+        知识点:
+        1.固定定位也是绝对定位
+        2.固定定位不会随滚动条滚动
+         */
+        .box1, .box2, .box3 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: #fcc;
+        }
+
+        .box2 {
+            background-color: #ccf;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .box3 {
+            background-color: #c96;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box4">
+    <div class="box2"></div>
+</div>
+<div class="box3"></div>
+</body>
+</html>

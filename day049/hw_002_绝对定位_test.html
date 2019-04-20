@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /**
+        1 .box1 .box2 宽高都是200px
+        2 .box3 .box4 宽高都是300px
+        3 颜色分别是red yellow yellowgreen orange
+        4 .box2是绝对定位
+        5 .s1 宽高100px 颜色yellow 绝对定位absolute
+
+        知识点:
+        1.绝对定位会脱离文档流,将原本的元素变为块元素
+        2.绝对定位相对于最近设置了定位的祖先元素,无则相对于窗口
+        3.绝对定位和相对定位都会让元素提升一个层级
+        4.绝对定位不设置偏移量,位置不会产生变化
+         */
+        .box1, .box2 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box3, .box4 {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: yellow;
+            position: absolute;
+        }
+
+        .box3 {
+            background-color: yellowgreen;
+        }
+
+        .box4 {
+            background-color: orange;
+        }
+
+        .s1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box5">
+    <div class="box4">
+        <div class="box2"></div>
+    </div>
+</div>
+<div class="box3"></div>
+<span class="s1">span标签</span>
+</body>
+</html>
