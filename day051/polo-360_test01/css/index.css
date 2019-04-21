@@ -1,0 +1,212 @@
+body {
+    background: url("../images/bd-bg.png") repeat-x;
+}
+
+.clear:before, .clear:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.clear {
+    zoom: 1;
+}
+
+#container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#header {
+    padding-top: 37px;
+    padding-bottom: 46px;
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.nav {
+    float: right;
+    margin-top: 22px;
+}
+
+.nav li {
+    float: left;
+    padding: 0 10px 8px;
+    border-left: 1px #d6d6d6 dotted;
+}
+
+.nav a {
+    color: #666;
+    font: bold 14px Georgia;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #b7b7b7;
+    font: 11px Tahoma;
+}
+
+#banner {
+    height: 365px;
+    background: url("../images/banner-bg.png") no-repeat bottom center;
+    position: relative;
+}
+
+.pointerDiv {
+    position: absolute;
+    top: 314px;
+    left: 15px;
+}
+
+.pointerDiv a {
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin-left: 4px;
+    background: url("../images/sprite.png") no-repeat;
+}
+
+.pointerDiv .active, .pointerDiv a:hover {
+    background: url("../images/sprite.png") no-repeat -27px 0;
+}
+
+#content h1 {
+    text-align: center;
+    font: bold 24px Georgia;
+    padding: 6px 0 20px 0;
+    margin-bottom: 38px;
+    background: url("../images/line.png") no-repeat bottom center;
+}
+
+#content .left, #content .center, #content .right,
+#contact .left, #contact .center, #contact .right {
+    float: left;
+    width: 300px;
+}
+
+#content h2 {
+    color: #11719e;
+    font: 21px Georgia;
+}
+
+#content .p1 {
+    color: #8c8c8c;
+    font: 12px Helvetica;
+}
+
+#content .imgDiv {
+    width: 299px;
+    height: 190px;
+    background: url("../images/img-bg.png") no-repeat;
+    margin: 16px 0 10px 0;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#content .p2 {
+    height: 92px;
+    color: #3e3e3d;
+    font: 13px Helvetica;
+    word-spacing: 2px;
+    overflow: hidden;
+}
+
+#content .learnMore {
+    display: block;
+    width: 163px;
+    height: 40px;
+    background: url("../images/sprite.png") no-repeat 0 -70px;
+    text-decoration: none;
+    color: #016999;
+    font: 12px/40px Helvetica;
+    text-indent: 1em;
+    margin-bottom: 35px;
+}
+
+#contact {
+    background: url("../images/line.png") no-repeat top center;
+}
+
+#contact input[type='text'] {
+    width: 276px;
+    height: 33px;
+    line-height: 33px;
+    background: url("../images/input.png") no-repeat;
+    _background-attachment: fixed;
+    border: none;
+    padding: 0 10px;
+    margin: 5px 0 16px;
+}
+
+#contact .btn {
+    width: 163px;
+    height: 32px;
+    background: url("../images/sprite.png") no-repeat 0 -27px;
+    border: none;
+    padding: 0;
+    margin: 11px 0 23px;
+    color: white;
+    font: 13px Georgia;
+    text-align: left;
+    text-indent: 1em;
+    cursor: pointer;
+}
+
+#contact h2 {
+    color: #444;
+    font: 18px/1 Georgia;
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 44px 0 10px;
+    margin-bottom: 15px;
+}
+
+#contact .left .p1 {
+    color: #444444;
+    font: 12px/1 Helvetica;
+}
+
+#contact .left .icon {
+    font-size: 0;
+    margin-top: 4px;
+}
+
+#contact .left .icon a {
+    margin-right: 6px;
+}
+
+#contact .left .n1 {
+    font: bold 18px/1 "gill sans mt";
+    padding: 34px 0 10px;
+    margin-bottom: 5px;
+}
+
+#contact .left, #contact .center, #contact .right {
+    margin: 5px;
+}
+
+#contact textarea {
+    width: 276px;
+    height: 114px;
+    background: url("../images/textarea.png") no-repeat;
+    _background-attachment: fixed;
+    border: none;
+    overflow: auto;
+    resize: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#footer a, #footer p {
+    color: #999;
+    font: 11px Helvetica;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#footer .copy {
+    float: right;
+    /*处理双倍边距的bug*/
+    display: inline;
+}
