@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>18_事件绑定与解绑</title>
+</head>
+<style type="text/css">
+  * {
+    margin: 0px;
+  }
+
+  .out {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: 10px;
+    background: blue;
+  }
+
+  .inner {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    background: red;
+  }
+
+  .divBtn {
+    position: absolute;
+    top: 250px;
+  }
+
+</style>
+
+<body style="height: 2000px;">
+
+<div class="out">
+  外部DIV
+  <div class="inner">内部div</div>
+</div>
+
+<div class='divBtn'>
+  <button id="btn1">取消绑定所有事件</button>
+  <button id="btn2">取消绑定mouseover事件</button>
+  <button id="btn3">测试事件坐标</button>
+  <a href="http://www.baidu.com" id="test4">百度一下</a>
+</div>
+
+<!--
+1. 事件绑定(2种)：
+  * eventName(function(){})
+    绑定对应事件名的监听,	例如：$('#div').click(function(){});
+  * on(eventName, funcion(){})
+    通用的绑定事件监听, 例如：$('#div').on('click', function(){})
+  * 优缺点:
+    eventName: 编码方便, 但只能加一个监听, 且有的事件监听不支持
+    on: 编码不方便, 可以添加多个监听, 且更通用
+2. 事件解绑：
+  * off(eventName)
+3. 事件的坐标
+  * event.clientX, event.clientY  相对于视口的左上角
+  * event.pageX, event.pageY  相对于页面的左上角
+  * event.offsetX, event.offsetY 相对于事件元素左上角
+4. 事件相关处理
+  * 停止事件冒泡 : event.stopPropagation()
+  * 阻止事件默认行为 : event.preventDefault()
+-->
+<script src="js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  /*
+   需求：
+   1. 给.out绑定点击监听(用两种方法绑定)
+   2. 给.inner绑定鼠标移入和移出的事件监听(用3种方法绑定)
+   3. 点击btn1解除.inner上的所有事件监听
+   4. 点击btn2解除.inner上的mouseover事件
+   5. 点击btn3得到事件坐标
+   6. 点击.inner区域, 外部点击监听不响应
+   7. 点击链接, 如果当前时间是偶数不跳转
+   */
+  //1. 给.out绑定点击监听(用两种方法绑定)
+  /*$('.out').click(function () {
+   console.log('click out')
+   })*/
+  $('.out').on('click', function () {
+    console.log('on click out')
+  })
+
+  //2. 给.inner绑定鼠标移入和移出的事件监听(用3种方法绑定)
+  /*
+   $('.inner')
+   .mouseenter(function () { // 进入
+    console.log('进入')
+   })
+   .mouseleave(function () { // 离开
+   console.log('离开')
+   })
+   */
+  /*
+   $('.inner')
+   .on('mouseenter', function () {
+   console.log('进入2')
+   })
+   .on('mouseleave', function () {
+   console.log('离开2')
+   })
+   */
+  $('.inner').hover(function () {
+    console.log('进入3')
+  }, function () {
+    console.log('离开3')
+  })
+
+
+  //3. 点击btn1解除.inner上的所有事件监听
+  $('#btn1').click(function () {
+    $('.inner').off()
+  })
+
+  //4. 点击btn2解除.inner上的mouseenter事件
+  $('#btn2').click(function () {
+    $('.inner').off('mouseenter')
+  })
+
+  //5. 点击btn3得到事件坐标
+  $('#btn3').click(function (event) { // event事件对象
+    console.log(event.offsetX, event.offsetY) // 原点为事件元素的左上角
+    console.log(event.clientX, event.clientY) // 原点为窗口的左上角
+    console.log(event.pageX, event.pageY) // 原点为页面的左上角
+  })
+
+  //6. 点击.inner区域, 外部点击监听不响应
+  $('.inner').click(function (event) {
+    console.log('click inner')
+    //停止事件冒泡
+    event.stopPropagation()
+  })
+  
+  //7. 点击链接, 如果当前时间是偶数不跳转
+  $('#test4').click(function (event) {
+    if(Date.now()%2===0) {
+      event.preventDefault()
+    }
+  })
+</script>
+</body>
+</html>

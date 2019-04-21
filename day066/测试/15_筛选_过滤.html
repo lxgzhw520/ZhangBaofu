@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>15_筛选_过滤</title>
+</head>
+
+<body>
+<ul>
+  <li>AAAAA</li>
+  <li title="hello" class="box2">BBBBB</li>
+  <li class="box">CCCCC</li>
+  <li title="hello">DDDDDD</li>
+  <li title="two"><span>BBBBB</span></li>
+</ul>
+<li>eeeee</li>
+<li>EEEEE</li>
+<br>
+
+<!--
+在jQuery对象中的元素对象数组中过滤出一部分元素来
+1. first()
+2. last()
+3. eq(index|-index)
+4. filter(selector)
+5. not(selector)
+6. has(selector)
+-->
+
+<script src="js/jquery-1.10.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+  /*
+   需求:
+   1. ul下li标签第一个
+   2. ul下li标签的最后一个
+   3. ul下li标签的第二个
+   4. ul下li标签中title属性为hello的
+   5. ul下li标签中title属性不为hello的
+   6. ul下li标签中有span子标签的
+   */
+  var $lis = $('ul>li')
+  //1. ul下li标签第一个
+  // $lis.first().css('background', 'red')
+  // $lis[0].style.background = 'red'
+
+  //2. ul下li标签的最后一个
+  // $lis.last().css('background', 'red')
+
+  //3. ul下li标签的第二个
+  // $lis.eq(1).css('background', 'red')
+
+  //4. ul下li标签中title属性为hello的
+  // $lis.filter('[title=hello]').css('background', 'red')
+
+  //5. ul下li标签中title属性不为hello的
+  // $lis.not('[title=hello]').css('background', 'red')
+  // $lis.filter('[title!=hello]').filter('[title]').css('background', 'red')
+
+  //6. ul下li标签中有span子标签的
+  $lis.has('span').css('background', 'red')
+</script>
+</body>
+</html>

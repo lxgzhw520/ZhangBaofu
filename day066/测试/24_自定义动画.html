@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>24_自定义动画</title>
+  <style type="text/css">
+    * {
+      margin: 0px;
+    }
+
+    .div1 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 50px;
+      left: 300px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+<button id="btn1">逐渐扩大</button>
+<button id="btn2">移动到指定位置</button>
+<button id="btn3">移动指定距离</button>
+<button id="btn4">停止动画</button>
+
+<div class="div1">
+  爱在西元前，学在尚硅谷
+</div>
+
+<!--
+jQuery动画本质 : 在指定时间内不断改变元素样式值来实现的
+1. animate(): 自定义动画效果的动画
+2. stop(): 停止动画
+
+-->
+<script src="js/jquery-1.10.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+  /*
+   需求：
+    1. 逐渐扩大
+      1). 宽/高都扩为200px
+      2). 宽先扩为200px, 高后扩为200px
+    2. 移动到指定位置
+      1).移动到(500, 100)处
+      2).移动到(100, 20)处
+    3.移动指定的距离
+      1). 移动距离为(100, 50)
+      2). 移动距离为(-100, -20)
+    4. 停止动画
+   */
+  var $div1 = $('.div1')
+
+  /*
+   1. 逐渐扩大
+     1). 宽/高都扩为200px
+     2). 宽先扩为200px, 高后扩为200px
+   */
+  $('#btn1').click(function () {
+    /*
+    $div1.animate({
+      width: 200,
+      height: 200
+    }, 1000)
+    */
+    $div1
+      .animate({
+        width: 200
+      }, 1000)
+      .animate({
+        height: 200
+      }, 1000)
+
+  })
+
+  /*
+   2. 移动到指定位置
+     1).移动到(500, 100)处
+     2).移动到(100, 20)处
+   */
+  $('#btn2').click(function () {
+    // 1).移动到(500, 100)处
+    /*
+    $div1.animate({ // 向右下移动
+      left: 500,
+      top: 100
+    }, 1000)
+    */
+
+    // 2).移动到(100, 20)处
+    $div1.animate({ // 向左上移动
+      left: 100,  // 300
+      top: 20  // 50
+    }, 1000)
+  })
+
+  /*
+   3.移动指定的距离
+     1). 移动距离为(100, 50)
+     2). 移动距离为(-100, -20)
+   */
+  $('#btn3').click(function () {
+    // 1). 移动距离为(100, 50)
+    /*$div1.animate({
+      left: '+=100',
+      top: '+=50'
+    }, 1000)*/
+
+    // 2). 移动距离为(-100, -20)
+    $div1.animate({
+      left: '-=100',
+      top: '-=20'
+    }, 3000)
+  })
+
+  $('#btn4').click(function () {
+    $div1.stop()
+  })
+
+</script>
+</body>
+</html>

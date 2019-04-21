@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>13_元素滚动</title>
+</head>
+<body style="height: 2000px;">
+<div style="border:1px solid black;width:100px;height:150px;overflow:auto">
+  This is some text. This is some text. This is some text. This is some text.
+  This is some text. This is some text. This is some text. This is some text.
+  This is some text. This is some text. This is some text. This is some text.
+  This is some text. This is some text. This is some text. This is some text.
+  This is some text. This is some text. This is some text. This is some text.
+  This is some text. This is some text. This is some text. This is some text.
+  his is some text.
+</div>
+<br>
+<br>
+<br>
+<button id="btn1">得到scrollTop</button>
+<button id="btn2">设置scrollTop</button>
+
+<!--
+1. scrollTop():
+  读取/设置滚动条的Y坐标
+2. $(document.body).scrollTop()+$(document.documentElement).scrollTop()
+  读取页面滚动条的Y坐标(兼容chrome和IE)
+3. $('body,html').scrollTop(60);
+  滚动到指定位置(兼容chrome和IE)
+-->
+<script src="js/jquery-1.10.1.js"></script>
+<script>
+  /*
+   需求:
+   1. 得到div或页面滚动条的坐标
+   2. 让div或页面的滚动条滚动到指定位置
+   */
+  //1. 得到div或页面滚动条的坐标
+  $('#btn1').click(function () {
+    console.log($('div').scrollTop())
+    // console.log($('html').scrollTop()+$('body').scrollTop())
+    console.log($(document.documentElement).scrollTop()+$(document.body).scrollTop()) // 兼容IE/Chrome
+  })
+  //2. 让div或页面的滚动条滚动到指定位置
+  $('#btn2').click(function () {
+    $('div').scrollTop(200)
+    $('html,body').scrollTop(300)
+  })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>14_元素的尺寸</title>
+</head>
+<style>
+  div {
+    width: 100px;
+    height: 150px;
+    background: red;
+    padding: 10px;
+    border: 10px #fbd850 solid;
+    margin: 10px;
+  }
+</style>
+</head>
+
+<body>
+<div>div</div>
+
+<!--
+1. 内容尺寸
+  height(): height
+  width(): width
+2. 内部尺寸
+  innerHeight(): height+padding
+  innerWidth(): width+padding
+3. 外部尺寸
+  outerHeight(false/true): height+padding+border  如果是true, 加上margin
+  outerWidth(false/true): width+padding+border 如果是true, 加上margin
+-->
+<script src="js/jquery-1.10.1.js" type="text/javascript"></script>
+<script>
+  var $div = $('div')
+  // 1. 内容尺寸
+  console.log($div.width(), $div.height())  // 100 150
+  // 2. 内部尺寸
+  console.log($div.innerWidth(), $div.innerHeight()) //120 170
+  // 3. 外部尺寸
+  console.log($div.outerWidth(), $div.outerHeight()) //140 190
+  console.log($div.outerWidth(true), $div.outerHeight(true)) //160 210
+
+</script>
+</body>
+
+</html>
